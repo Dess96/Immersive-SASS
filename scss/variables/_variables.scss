@@ -1,0 +1,20 @@
+//FONT FAMILIES
+$main-family: 'Roboto', sans-serif;
+$title-family: 'Montserrat', sans-serif;
+
+//COLORS
+$white: #ffffff;
+$black: #000000;
+$dark-blue: #98d3e5;
+$light-blue: #b5e1ee;
+$shadow-gray: #999999;
+
+//SIZES
+$large-font: 1.5rem;
+$huge-font: 3rem;
+
+@mixin shadow {
+    -webkit-box-shadow: 2px 2px 2px $shadow-gray;
+    -moz-box-shadow: 2px 2px 2px $shadow-gray;
+    box-shadow: 2px 2px 2px $shadow-gray;
+}

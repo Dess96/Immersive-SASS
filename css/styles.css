@@ -1,0 +1,162 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+.header--large a {
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: #000000;
+  z-index: 10;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  padding-left: 20px;
+}
+
+.header-right {
+  padding-right: 20px;
+}
+
+.hero {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #98d3e5;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 35px;
+  background-image: url("back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-list__card {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 2px 2px 2px #999999;
+  -moz-box-shadow: 2px 2px 2px #999999;
+  box-shadow: 2px 2px 2px #999999;
+  background-color: #ffffff;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-list__content {
+  flex: 0 0 100%;
+  justify-self: center;
+  text-align: center;
+}
+
+.activity-list {
+  background: #b5e1ee;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.activity-list > * {
+  flex: 0 0 100%;
+}
+
+.activity-list__item {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  margin: 10px 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px #999999;
+  -moz-box-shadow: 2px 2px 2px #999999;
+  box-shadow: 2px 2px 2px #999999;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.header-left {
+  align-self: left;
+}
+
+.header-right {
+  align-self: right;
+}
+
+.footer-left {
+  align-self: right;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .header-left, .header-right {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .hero {
+    height: 40vw;
+  }
+}
